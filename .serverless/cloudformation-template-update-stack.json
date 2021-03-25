@@ -241,7 +241,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/pharm-api/dev/1614936790176-2021-03-05T09:33:10.176Z/pharm-api.zip"
+          "S3Key": "serverless/pharm-api/dev/1616588217193-2021-03-24T12:16:57.193Z/pharm-api.zip"
         },
         "Handler": "s_getTotalSupply.handler",
         "Runtime": "nodejs12.x",
@@ -251,7 +251,7 @@
         "Environment": {
           "Variables": {
             "Provider": "https://bsc-dataseed.binance.org/",
-            "PharmAddress": "0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
+            "PharmAddress": "0x50dF85A6E3635B8A69b16978f31a888541f95D23",
             "BurnAddress": "0x000000000000000000000000000000000000dead"
           }
         },
@@ -273,7 +273,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/pharm-api/dev/1614936790176-2021-03-05T09:33:10.176Z/pharm-api.zip"
+          "S3Key": "serverless/pharm-api/dev/1616588217193-2021-03-24T12:16:57.193Z/pharm-api.zip"
         },
         "Handler": "s_getCirculatingSupply.handler",
         "Runtime": "nodejs12.x",
@@ -283,7 +283,7 @@
         "Environment": {
           "Variables": {
             "Provider": "https://bsc-dataseed.binance.org/",
-            "PharmAddress": "0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
+            "PharmAddress": "0x50dF85A6E3635B8A69b16978f31a888541f95D23",
             "BurnAddress": "0x000000000000000000000000000000000000dead"
           }
         },
@@ -305,7 +305,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/pharm-api/dev/1614936790176-2021-03-05T09:33:10.176Z/pharm-api.zip"
+          "S3Key": "serverless/pharm-api/dev/1616588217193-2021-03-24T12:16:57.193Z/pharm-api.zip"
         },
         "Handler": "s_getTVL.handler",
         "Runtime": "nodejs12.x",
@@ -315,7 +315,7 @@
         "Environment": {
           "Variables": {
             "Provider": "https://bsc-dataseed.binance.org/",
-            "PharmAddress": "0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
+            "PharmAddress": "0x50dF85A6E3635B8A69b16978f31a888541f95D23",
             "BurnAddress": "0x000000000000000000000000000000000000dead"
           }
         },
@@ -330,34 +330,34 @@
         "GetTVLLogGroup"
       ]
     },
-    "GetCirculatingSupplyLambdaVersion4owGqBqaAOkeSFfs5Y8PW2XV5igSpQ6o51JCD6pdgAI": {
+    "GetCirculatingSupplyLambdaVersionQZtelxmvbs5wzWVfX39ewtzq9H89N7CAIDu3bZU2bo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetCirculatingSupplyLambdaFunction"
         },
-        "CodeSha256": "jacqqfHxWZUZzla9QZGRdSg4bdzJExChDWw82R2Iwio="
+        "CodeSha256": "CV/DffmNX0W1RaE9RD8EjybWOtsav1tN6Vo6AooaDIk="
       }
     },
-    "GetTVLLambdaVersionTC0jpajJslrj0ygQjHcuYiscaeN72JOrTdVOgTdmA": {
+    "GetTVLLambdaVersionRfuOo25iP21mjpQhueBze93vDLLVP4fSpSIShbMhGs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetTVLLambdaFunction"
         },
-        "CodeSha256": "jacqqfHxWZUZzla9QZGRdSg4bdzJExChDWw82R2Iwio="
+        "CodeSha256": "CV/DffmNX0W1RaE9RD8EjybWOtsav1tN6Vo6AooaDIk="
       }
     },
-    "GetTotalSupplyLambdaVersionzKTE92QOi5Avamqk6rVvNvbhWHEORLA24NZuH5ks": {
+    "GetTotalSupplyLambdaVersionyd3q6P2eAgqJf9PpFxXZz2MC7xEUWka0QDo4NDO4uTU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetTotalSupplyLambdaFunction"
         },
-        "CodeSha256": "jacqqfHxWZUZzla9QZGRdSg4bdzJExChDWw82R2Iwio="
+        "CodeSha256": "CV/DffmNX0W1RaE9RD8EjybWOtsav1tN6Vo6AooaDIk="
       }
     },
     "ApiGatewayRestApi": {
@@ -681,7 +681,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1614936767973": {
+    "ApiGatewayDeployment1616588194464": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -919,7 +919,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/pharm-api/dev/1614936790176-2021-03-05T09:33:10.176Z/custom-resources.zip"
+          "S3Key": "serverless/pharm-api/dev/1616588217193-2021-03-24T12:16:57.193Z/custom-resources.zip"
         },
         "FunctionName": "pharm-api-dev-custom-resource-apigw-cw-role",
         "Handler": "apiGatewayCloudWatchRole/handler.handler",
@@ -1021,19 +1021,19 @@
     "GetCirculatingSupplyLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetCirculatingSupplyLambdaVersion4owGqBqaAOkeSFfs5Y8PW2XV5igSpQ6o51JCD6pdgAI"
+        "Ref": "GetCirculatingSupplyLambdaVersionQZtelxmvbs5wzWVfX39ewtzq9H89N7CAIDu3bZU2bo"
       }
     },
     "GetTVLLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetTVLLambdaVersionTC0jpajJslrj0ygQjHcuYiscaeN72JOrTdVOgTdmA"
+        "Ref": "GetTVLLambdaVersionRfuOo25iP21mjpQhueBze93vDLLVP4fSpSIShbMhGs"
       }
     },
     "GetTotalSupplyLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetTotalSupplyLambdaVersionzKTE92QOi5Avamqk6rVvNvbhWHEORLA24NZuH5ks"
+        "Ref": "GetTotalSupplyLambdaVersionyd3q6P2eAgqJf9PpFxXZz2MC7xEUWka0QDo4NDO4uTU"
       }
     },
     "ServiceEndpoint": {
